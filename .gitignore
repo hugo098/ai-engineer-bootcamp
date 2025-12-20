@@ -170,3 +170,7 @@ Thumbs.db
 # *.model
 # *.pth
 # *.pt
+
+/LLM/my_saved_models/
+/LLM/TextClassificationXLNet/fine_tuned_xlnet_emotion/
+/LLM/TextClassificationXLNet/test_trainer/
