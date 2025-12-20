@@ -33,6 +33,22 @@ Progressive learning path covering fundamental to advanced NLP techniques:
 #### Projects
 - **[Fake News Classifier](NLP/FakeNews/FakeNewsClassifier.ipynb)** - Complete ML project for detecting fake news
 
+### LLM Module
+Modern Large Language Models and transformer architectures:
+
+#### Foundation Models & APIs
+1. **[GPT Models](LLM/1-GptModels.ipynb)** - Introduction to GPT models and OpenAI API usage
+2. **[LangChain Introduction](LLM/2-LangChainIntro.ipynb)** - LangChain framework fundamentals and chains
+3. **[Hugging Face Transformers](LLM/3-HuggingFaceTransformers.ipynb)** - Working with the transformers library
+4. **[BERT](LLM/4-BERT.ipynb)** - BERT model implementation and fine-tuning
+
+#### Projects
+- **[Text Classification with XLNet](LLM/TextClassificationXLNet/TextClassificationXLNet.ipynb)** - Complete pipeline for emotion classification
+  - Fine-tuning XLNet-base-cased model
+  - 4-class emotion detection (anger, fear, joy, sadness)
+  - Training on labeled tweet dataset
+  - Model evaluation and inference
+
 ### Python Introduction
 - **[Python Variables](PythonIntro/PythonVariables.ipynb)** - Python programming basics
 
@@ -59,15 +75,27 @@ The repository includes several real-world datasets for practice:
 - **Gensim** - Topic modeling and document similarity
 - **vaderSentiment** - Sentiment analysis
 
+### LLM & Deep Learning
+- **transformers** - Hugging Face transformers library
+- **torch** - PyTorch deep learning framework
+- **datasets** - Hugging Face datasets library
+- **evaluate** - Model evaluation metrics
+- **LangChain** - Framework for LLM applications
+- **OpenAI** - GPT models API
+
 ### Machine Learning
 - **scikit-learn** - ML algorithms and tools
   - TF-IDF & Count Vectorizers
   - Logistic Regression
   - SGD Classifier
   - Model evaluation metrics
+  - Label encoding and preprocessing
 
 ### Deep Learning (Transformers)
+- XLNet for sequence classification
+- BERT and variants
 - Pre-trained transformer models for advanced NLP tasks
+- Model fine-tuning and transfer learning
 
 ## 🚀 Getting Started
 
@@ -76,7 +104,8 @@ The repository includes several real-world datasets for practice:
 # Install required packages
 pip install pandas numpy matplotlib seaborn
 pip install spacy nltk gensim vaderSentiment
-pip install scikit-learn transformers
+pip install scikit-learn transformers torch datasets evaluate
+pip install langchain openai
 pip install jupyter notebook
 
 # Download NLTK data
@@ -105,9 +134,12 @@ jupyter lab
 2. Follow NLP notebooks in numerical order (1-15)
 3. Complete hands-on exercises (6, 9, 12)
 4. Apply knowledge to the Fake News Classifier project
+5. Explore LLM notebooks (1-4) for modern transformer models
+6. Work on the XLNet emotion classification project
 
 ## 🎯 Key Concepts Covered
 
+### NLP Fundamentals
 - Text preprocessing and cleaning
 - Tokenization strategies
 - Feature extraction (TF-IDF, Count Vectorization)
@@ -116,7 +148,16 @@ jupyter lab
 - Part-of-Speech tagging
 - Topic modeling
 - Text classification with machine learning
-- Working with pre-trained transformer models
+
+### Large Language Models
+- GPT models and OpenAI API integration
+- LangChain framework for LLM applications
+- Hugging Face transformers ecosystem
+- BERT architecture and applications
+- XLNet for sequence classification
+- Model fine-tuning and transfer learning
+- Text preprocessing for transformer models
+- Emotion classification with deep learning
 
 ## 📝 Project: Fake News Classifier
 
@@ -127,6 +168,16 @@ A complete end-to-end machine learning project demonstrating:
 - Model training (Logistic Regression, SGD)
 - Model evaluation and metrics
 - Real-world application of NLP techniques
+
+## 📝 Project: XLNet Emotion Classification
+
+A deep learning project using transformers:
+- Fine-tuning XLNet-base-cased on emotion dataset
+- Multi-class classification (anger, fear, joy, sadness)
+- Working with Hugging Face datasets and trainers
+- Text cleaning and tokenization for transformers
+- Model evaluation and inference pipeline
+- Saving and loading fine-tuned models
 
 ## 🤝 Contributing
 
