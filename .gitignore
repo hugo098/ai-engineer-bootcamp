@@ -174,3 +174,4 @@ Thumbs.db
 /LLM/my_saved_models/
 /LLM/TextClassificationXLNet/fine_tuned_xlnet_emotion/
 /LLM/TextClassificationXLNet/test_trainer/
+chroma_data_science_course
