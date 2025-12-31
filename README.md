@@ -87,6 +87,21 @@ Build context-aware AI applications with document retrieval:
 - **[Maximal Marginal Relevance (MMR) Search](LangChain/4-RAG/8-RetrievalMarginalRelevanceSearch.ipynb)** - Diverse retrieval strategies
 - **[Document Generation with Stuffing](LangChain/4-RAG/11-GenerationStuffingDocuments.ipynb)** - Context-aware response generation
 
+### LangGraph Module
+Build stateful, multi-agent AI applications with graph-based workflows:
+
+#### Graph Fundamentals & State Management
+1. **[First Graph](LangGraph/1-FirstGraph.ipynb)** - Introduction to LangGraph and basic graph construction
+2. **[Conditional Edges](LangGraph/2-ConditionalEdges.ipynb)** - Branching logic and dynamic routing
+3. **[Annotated Construct & Reducer Functions](LangGraph/3-AnnotatedConstructReducerFunctions.ipynb)** - State manipulation with reducers
+4. **[Messages State](LangGraph/4-MessagesState.ipynb)** - Working with conversation message states
+5. **[Remove Message](LangGraph/5-RemoveMessage.ipynb)** - Managing message history
+
+#### Memory & Conversation Management
+6. **[Message Summary](LangGraph/6-MessageSummary.ipynb)** - Summarizing conversations for context
+7. **[Short-Term Memory](LangGraph/7-ShortTermMemory.ipynb)** - In-memory conversation persistence
+9. **[Long-Term Memory](LangGraph/9-LongTermMemory.ipynb)** - SQLite-based persistent memory with checkpointing
+
 ### Python Introduction
 - **[Python Variables](PythonIntro/PythonVariables.ipynb)** - Python programming basics
 
@@ -123,6 +138,11 @@ The repository includes several real-world datasets for practice:
   - **langchain-community** - Community integrations
   - **langchain-chroma** - Chroma vector store
   - **langchain-core** - Core LangChain components
+- **LangGraph** - Build stateful multi-agent applications
+  - **langgraph** - Graph-based workflow orchestration
+  - State management and checkpointing
+  - Conditional routing and branching
+  - Memory persistence (SQLite, in-memory)
 - **OpenAI** - GPT models API
 - **chromadb** - Vector database for embeddings
 - **pypdf** - PDF document processing
@@ -153,6 +173,7 @@ pip install spacy nltk gensim vaderSentiment
 pip install scikit-learn transformers torch datasets evaluate
 pip install langchain openai python-dotenv
 pip install langchain-openai langchain-community langchain-chroma
+pip install langgraph
 pip install pypdf docx2txt chromadb
 pip install jupyter notebook
 
@@ -189,6 +210,10 @@ jupyter lab
    - Understand Output Parsers (2-ModelOutput)
    - Master LCEL components (3-LangChainExpressionLanguage)
    - Build RAG applications (4-RAG)
+8. **Master LangGraph for stateful applications:**
+   - Build basic graphs and understand state flow (1-2)
+   - Work with state management and reducers (3-5)
+   - Implement conversation memory systems (6-7, 9)
 
 ## 🎯 Key Concepts Covered
 
@@ -225,6 +250,17 @@ jupyter lab
 - Document retrieval (similarity search, MMR)
 - Context-aware response generation
 - Metadata preservation and filtering
+
+### LangGraph & Stateful Applications
+- Graph-based workflow design and orchestration
+- State management with MessagesState
+- Conditional routing and branching logic
+- Reducer functions for state manipulation
+- Message history management (add/remove)
+- Conversation summarization for context compression
+- Memory persistence (in-memory and SQLite)
+- Checkpointing for long-term conversation storage
+- Thread-based conversation management
 
 ## 📝 Project: Fake News Classifier
 
