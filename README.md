@@ -102,6 +102,23 @@ Build stateful, multi-agent AI applications with graph-based workflows:
 7. **[Short-Term Memory](LangGraph/7-ShortTermMemory.ipynb)** - In-memory conversation persistence
 9. **[Long-Term Memory](LangGraph/9-LongTermMemory.ipynb)** - SQLite-based persistent memory with checkpointing
 
+### VectorDatabase Module
+Work with Pinecone vector databases for semantic search and similarity matching:
+
+#### Vector Store Fundamentals
+1. **[Pinecone Introduction](VectorDatabase/1-PyneconeIntro.ipynb)** - Setting up Pinecone, creating indexes, basic operations
+2. **[Fineweb Vector Database](VectorDatabase/2-FinewebVectorDb.ipynb)** - Working with document embeddings
+3. **[Course Vector Database](VectorDatabase/3-CoursesVector.ipynb)** - Building a course catalog search with semantic embeddings
+
+#### Semantic Search Applications
+4. **[Courses & Sections Semantic Search](VectorDatabase/4-CoursesAndSectionsSemanticSearch.ipynb)** - Multi-level hierarchical search
+5. **[Semantic Search with BERT](VectorDatabase/5-CoursesAndSectionsSemanticSearchBERT.ipynb)** - Using BERT embeddings for better search
+6. **[Weighted Semantic Search](VectorDatabase/6-CoursesAndSectionsSemanticSearchBERTWeighted.ipynb)** - Field-weighted embeddings for prioritized search
+
+#### Datasets
+- `course_descriptions.csv` - Course catalog data
+- `course_section_descriptions.csv` - Hierarchical course and section data
+
 ### Python Introduction
 - **[Python Variables](PythonIntro/PythonVariables.ipynb)** - Python programming basics
 
@@ -163,6 +180,16 @@ The repository includes several real-world datasets for practice:
 - Pre-trained transformer models for advanced NLP tasks
 - Model fine-tuning and transfer learning
 
+### Vector Databases & Semantic Search
+- **Pinecone** - Managed vector database service
+- **sentence-transformers** - State-of-the-art sentence embeddings
+  - all-MiniLM-L6-v2 - Fast and efficient embeddings
+  - multi-qa-distilbert-cos-v1 - Question-answering optimized
+- Vector similarity search (cosine similarity)
+- Hierarchical semantic search
+- Weighted embedding strategies for field prioritization
+- Metadata filtering and retrieval
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -175,6 +202,7 @@ pip install langchain openai python-dotenv
 pip install langchain-openai langchain-community langchain-chroma
 pip install langgraph
 pip install pypdf docx2txt chromadb
+pip install pinecone-client sentence-transformers
 pip install jupyter notebook
 
 # Download NLTK data
@@ -214,6 +242,11 @@ jupyter lab
    - Build basic graphs and understand state flow (1-2)
    - Work with state management and reducers (3-5)
    - Implement conversation memory systems (6-7, 9)
+9. **Explore Vector Databases & Semantic Search:**
+   - Set up Pinecone and understand vector indexes (1)
+   - Create embeddings with sentence-transformers (2-3)
+   - Build semantic search applications (4-5)
+   - Implement weighted search strategies (6)
 
 ## 🎯 Key Concepts Covered
 
@@ -261,6 +294,21 @@ jupyter lab
 - Memory persistence (in-memory and SQLite)
 - Checkpointing for long-term conversation storage
 - Thread-based conversation management
+
+### Vector Databases & Semantic Search
+- Vector database setup and index management (Pinecone)
+- Sentence embeddings with transformer models
+- Semantic similarity search and ranking
+- Hierarchical search across nested data structures
+- Metadata preservation and filtering
+- Weighted embedding strategies:
+  - Field-level weighting for prioritization
+  - Weighted averaging for combined embeddings
+  - Custom search relevance tuning
+- Real-world applications:
+  - Course catalog search
+  - Educational content discovery
+  - Multi-level content hierarchies
 
 ## 📝 Project: Fake News Classifier
 
